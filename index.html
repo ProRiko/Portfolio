@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ribhu Mukherjee | Portfolio</title>
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 glass-effect shadow-md">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-white">
+                <a href="#" class="hover:text-[#64ffda] transition-colors">RM</a>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#about" class="hover:text-[#64ffda] transition-colors">About</a>
+                <a href="#experience" class="hover:text-[#64ffda] transition-colors">Experience</a>
+                <a href="#projects" class="hover:text-[#64ffda] transition-colors">Projects</a>
+                <a href="#skills" class="hover:text-[#64ffda] transition-colors">Skills</a>
+                <a href="#contact" class="hover:text-[#64ffda] transition-colors">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-white focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#about" class="block py-2 px-4 text-sm hover:bg-[#112240]">About</a>
+            <a href="#experience" class="block py-2 px-4 text-sm hover:bg-[#112240]">Experience</a>
+            <a href="#projects" class="block py-2 px-4 text-sm hover:bg-[#112240]">Projects</a>
+            <a href="#skills" class="block py-2 px-4 text-sm hover:bg-[#112240]">Skills</a>
+            <a href="#contact" class="block py-2 px-4 text-sm hover:bg-[#112240]">Contact</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 md:px-12 lg:px-20 pt-24">
+        <!-- Hero Section -->
+        <section id="hero" class="min-h-screen flex flex-col justify-center items-start section">
+            <p class="text-lg text-[#64ffda] mb-4">Hi, my name is</p>
+            <h1 class="text-4xl md:text-7xl font-bold text-slate-100">Ribhu Mukherjee.</h1>
+            <h2 class="text-4xl md:text-6xl font-bold text-slate-400 mt-2">I build things for the web and beyond.</h2>
+            <p class="mt-6 max-w-xl text-slate-400">
+                I'm a proactive and technically skilled Computer Science student with a passion for AI/ML, networking, and system automation. I enjoy turning complex problems into simple, beautiful, and intuitive solutions.
+            </p>
+            <div class="mt-8">
+                <a href="mailto:reebhu26@gmail.com" class="btn-primary font-medium py-3 px-6 rounded-lg inline-block">Get In Touch</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 section">
+            <h2 class="text-3xl font-bold text-slate-100 mb-8 flex items-center"><span class="text-[#64ffda] mr-3">01.</span> About Me</h2>
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-10">
+                <div class="md:col-span-3 text-slate-400 space-y-4">
+                    <p>
+                        Hello! I'm Ribhu, a Computer Science student based in Kolkata, India. My journey into technology began with a curiosity for how things work, which quickly evolved into a passion for software development, computer vision, and back-end automation.
+                    </p>
+                    <p>
+                        I'm a Smart India Hackathon 2024 Finalist, driven to build real-world solutions. I'm adept in Java, Python, and C, with proven success in developing educational tools and public safety applications. I thrive in collaborative environments and am always eager to learn and adapt to new challenges.
+                    </p>
+                    <p>
+                        Currently, I'm diving deeper into AI/ML and exploring the fascinating world of smart surveillance systems and EdTech automation.
+                    </p>
+                </div>
+                <div class="md:col-span-2 flex justify-center items-center">
+                    <div class="w-64 h-64 rounded-lg overflow-hidden relative group">
+                        <!-- <img src="https://placehold.co/400x400/0a192f/64ffda?text=RM" alt="Ribhu Mukherjee" class="w-full h-full object-cover"> -->
+                        <img src="ribhu.jpg" alt="Ribhu Mukherjee" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-[#64ffda] opacity-20 group-hover:opacity-0 transition-opacity duration-300"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="py-20 section">
+            <h2 class="text-3xl font-bold text-slate-100 mb-12"><span class="text-[#64ffda] mr-3">02.</span> Where I've Worked</h2>
+            <div class="relative pl-8 border-l-2 border-slate-700">
+                <!-- ISW Kolkata -->
+                <div class="mb-12 timeline-item">
+                    <h3 class="text-xl font-semibold text-slate-100">Computer Teacher and Associate</h3>
+                    <p class="text-[#64ffda] mb-2">ISW Kolkata</p>
+                    <p class="text-sm text-slate-500 mb-4">Nov 2022 - Jan 2025</p>
+                    <ul class="list-disc list-inside text-slate-400 space-y-2">
+                        <li>Delivered structured computer science lessons to 50+ students, improving coding performance by 30% on average.</li>
+                        <li>Designed customized educational worksheets to enhance individual learning outcomes.</li>
+                        <li>Implemented innovative teaching methodologies to promote student engagement.</li>
+                    </ul>
+                </div>
+                <!-- Tutedude -->
+                <div class="timeline-item">
+                    <h3 class="text-xl font-semibold text-slate-100">Consultant Intern - Python & EdTech</h3>
+                    <p class="text-[#64ffda] mb-2">Tutedude (Remote)</p>
+                    <p class="text-sm text-slate-500 mb-4">May 2025 - Present</p>
+                    <ul class="list-disc list-inside text-slate-400 space-y-2">
+                        <li>Mentored students in Python programming and project development.</li>
+                        <li>Designed and evaluated assignments, guiding learners through hands-on tasks.</li>
+                        <li>Provided feedback to improve EdTech processes and overall learner experience.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 section">
+            <h2 class="text-3xl font-bold text-slate-100 mb-8"><span class="text-[#64ffda] mr-3">03.</span> Things I've Built</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Project 1 -->
+                <div class="project-card glass-effect p-6 rounded-lg border-2 border-transparent transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <i class="fas fa-folder-open text-4xl text-[#64ffda]"></i>
+                            <a href="https://github.com/Proriko" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-[#64ffda]"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-100 mb-2">Crowd Monitoring & Mischief Detection</h3>
+                        <p class="text-slate-400 text-sm mb-4">A vision-based real-time surveillance solution to detect crowd build-up and suspicious activity using facial and motion analysis.</p>
+                    </div>
+                    <div>
+                        <div class="flex flex-wrap text-xs text-slate-400 mb-4 tech-stack">
+                            <span class="mr-3">Python</span><span class="mr-3">OpenCV</span><span class="mr-3">Haar Cascades</span><span>Flask</span>
+                        </div>
+                        <button class="enhance-btn w-full text-sm btn-primary py-2 px-3 rounded">✨ Enhance with AI</button>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card glass-effect p-6 rounded-lg border-2 border-transparent transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <i class="fas fa-folder-open text-4xl text-[#64ffda]"></i>
+                            <a href="https://github.com/Proriko" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-[#64ffda]"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-100 mb-2">Saathi - Legal Rights Assistant</h3>
+                        <p class="text-slate-400 text-sm mb-4">A multilingual legal rights app that helps users understand their rights in simple language using LLMs, with regional language support.</p>
+                    </div>
+                    <div>
+                        <div class="flex flex-wrap text-xs text-slate-400 mb-4 tech-stack">
+                            <span class="mr-3">React Native</span><span class="mr-3">Python</span><span class="mr-3">LLM APIs</span><span>LangChain</span>
+                        </div>
+                        <button class="enhance-btn w-full text-sm btn-primary py-2 px-3 rounded">✨ Enhance with AI</button>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card glass-effect p-6 rounded-lg border-2 border-transparent transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <i class="fas fa-folder-open text-4xl text-[#64ffda]"></i>
+                            <a href="https://github.com/Proriko" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-[#64ffda]"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-100 mb-2">AutoSenseAI - Energy Optimization</h3>
+                        <p class="text-slate-400 text-sm mb-4">An intelligent system using LLMs to optimize HVAC control in real-time based on environmental data like temperature and occupancy.</p>
+                    </div>
+                    <div>
+                        <div class="flex flex-wrap text-xs text-slate-400 mb-4 tech-stack">
+                            <span class="mr-3">Python</span><span class="mr-3">LLM API</span><span class="mr-3">LangChain</span><span>FastAPI</span>
+                        </div>
+                        <button class="enhance-btn w-full text-sm btn-primary py-2 px-3 rounded">✨ Enhance with AI</button>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="project-card glass-effect p-6 rounded-lg border-2 border-transparent transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <i class="fas fa-folder-open text-4xl text-[#64ffda]"></i>
+                            <a href="https://github.com/Proriko" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-[#64ffda]"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-100 mb-2">AI Story & Video Generator</h3>
+                        <p class="text-slate-400 text-sm mb-4">A web app that generates unique stories using AI based on user prompts and converts them into conceptual videos.</p>
+                    </div>
+                    <div>
+                        <div class="flex flex-wrap text-xs text-slate-400 mb-4 tech-stack">
+                            <span class="mr-3">Flask</span><span class="mr-3">JavaScript</span><span class="mr-3">HTML/CSS</span><span>LLM API</span>
+                        </div>
+                        <button class="enhance-btn w-full text-sm btn-primary py-2 px-3 rounded">✨ Enhance with AI</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-20 section">
+            <h2 class="text-3xl font-bold text-slate-100 mb-8 text-center"><span class="text-[#64ffda]">04.</span> My Skillset</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="skill-card glass-effect p-6 rounded-lg text-center transition-all duration-300">
+                    <i class="fas fa-code text-4xl text-[#64ffda] mb-4"></i>
+                    <h3 class="text-xl font-bold text-slate-100 mb-2">Languages</h3>
+                    <p class="text-slate-400">Python, Java, C, HTML, CSS, SQL</p>
+                </div>
+                <div class="skill-card glass-effect p-6 rounded-lg text-center transition-all duration-300">
+                    <i class="fas fa-cogs text-4xl text-[#64ffda] mb-4"></i>
+                    <h3 class="text-xl font-bold text-slate-100 mb-2">Frameworks & Libraries</h3>
+                    <p class="text-slate-400">Flask, OpenCV, Dlib, Pandas, NumPy, BeautifulSoup</p>
+                </div>
+                <div class="skill-card glass-effect p-6 rounded-lg text-center transition-all duration-300">
+                    <i class="fas fa-tools text-4xl text-[#64ffda] mb-4"></i>
+                    <h3 class="text-xl font-bold text-slate-100 mb-2">Tools</h3>
+                    <p class="text-slate-400">Git, VS Code, MySQL, SQLite, Twilio, SMTP</p>
+                </div>
+                <div class="skill-card glass-effect p-6 rounded-lg text-center transition-all duration-300">
+                    <i class="fas fa-brain text-4xl text-[#64ffda] mb-4"></i>
+                    <h3 class="text-xl font-bold text-slate-100 mb-2">Concepts</h3>
+                    <p class="text-slate-400">Computer Vision, AI/ML, Data Structures, Web Dev, REST APIs</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 text-center section">
+            <h2 class="text-2xl font-semibold text-[#64ffda] mb-2">05. What's Next?</h2>
+            <h3 class="text-4xl md:text-5xl font-bold text-slate-100 mb-4">Get In Touch</h3>
+            <p class="max-w-xl mx-auto text-slate-400 mb-8">
+                I'm currently seeking new opportunities and my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+            </p>
+            <p class="mt-4 text-slate-400 text-lg">You can reach me by email at: <a href="mailto:reebhu26@gmail.com" class="text-[#64ffda] hover:underline font-semibold">reebhu26@gmail.com</a></p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-8">
+        <div class="flex justify-center items-center space-x-6 mb-4">
+            <a href="https://github.com/Proriko" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-[#64ffda] transition-colors text-2xl"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/ribhu-mukherjee-26ri02bh05u/" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-[#64ffda] transition-colors text-2xl"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p class="text-center text-slate-500 text-sm">
+            Designed & Built by Ribhu Mukherjee
+        </p>
+        <p class="text-center text-slate-500 text-xs mt-1">
+            Inspired by modern web design trends.
+        </p>
+    </footer>
+
+    <!-- AI Modal -->
+    <div id="ai-modal" class="fixed inset-0 bg-black bg-opacity-70 z-50 hidden flex justify-center items-center p-4">
+        <div class="bg-[#112240] rounded-lg p-6 md:p-8 max-w-2xl w-full mx-auto shadow-2xl border border-slate-700">
+            <div class="flex justify-between items-center mb-4">
+                 <h3 class="text-xl md:text-2xl font-bold text-slate-100">✨ AI Enhanced Description</h3>
+                 <button id="close-modal-btn" class="text-slate-400 hover:text-white text-2xl">&times;</button>
+            </div>
+            <div id="modal-content" class="text-slate-400 max-h-[60vh] overflow-y-auto pr-2">
+                <!-- Loading spinner -->
+                <div id="modal-loader" class="text-center py-8">
+                    <i class="fas fa-spinner fa-spin text-4xl text-[#64ffda]"></i>
+                    <p class="mt-4 animate-pulse">Generating... please wait.</p>
+                </div>
+                <!-- Result -->
+                <div id="modal-result" class="hidden">
+                    <p id="ai-description" class="whitespace-pre-wrap"></p>
+                </div>
+                 <!-- Error -->
+                <div id="modal-error" class="hidden">
+                    <p class="text-red-400">Sorry, the AI is a bit busy. Please try again in a moment.</p>
+                </div>
+            </div>
+            <div class="mt-6 text-right">
+                <button id="close-modal-btn-bottom" class="btn-primary font-medium py-2 px-6 rounded-lg">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
